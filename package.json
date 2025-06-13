@@ -19,7 +19,7 @@
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
-    "homepage" : "https://github.com/Barbiesa14/My-Portfolio-App"
+    "homepage" : "https://barbiesa14.github.io/My-Portfolio-App/"
   },
   "scripts": {
     "start": "react-scripts start",
