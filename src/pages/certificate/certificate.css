@@ -1,0 +1,89 @@
+.certificates-page {
+  background: url('../../assets/bg2.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.certificates-title {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ddb7ab, #999b84);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.creative-section {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+.certificates-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-card {
+  background-color: #e7e7db;
+  border-left: 8px solid #999b84;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  margin: 0.6rem;
+  text-align: center;
+  max-width: 350px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.certificate-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Slick dots customization */
+.slick-dots li button:before {
+  color: #999b84;
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before {
+  color: #ddb7ab;
+}
+
+/* Slick arrows customization */
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  color: #999b84;
+  font-size: 24px;
+}

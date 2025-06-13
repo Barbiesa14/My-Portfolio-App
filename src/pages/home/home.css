@@ -1,0 +1,196 @@
+/* -------------- BASE STYLES -------------- */
+
+.homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../../assets/bg2.jpg') no-repeat center center/cover;
+  padding: 2rem;
+  gap: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #F4EEED;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image-sec {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  width: 250px;
+  height: 280px;
+}
+.profile-frame {
+  width: 260px;               /* Keep width slightly smaller */
+  height: 320px;              /* Increase height significantly */
+  border: 5px dotted #DDB7AB;
+  border-radius: 50%;         /* Still keep it rounded */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+   border-radius: 50%;  
+}
+
+
+.text-content {
+  text-align: center;
+  color: #999B84;
+}
+
+.text-content h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  background: linear-gradient(90deg, #999B84, #DDB7AB, #EFD9D1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.role {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #4a4a4a;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icon {
+  color: #999B84;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #DDB7AB;
+}
+
+/* -------------- RIGHT NAV ICONS -------------- */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  /* background-color: #F4EEED; */
+  
+}
+
+.nav-icon {
+  background-color: #999B84;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.nav-icon:hover {
+  background-color: #DDB7AB;
+  cursor: pointer;
+}
+
+.nav-icon a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------- RESPONSIVE STYLES -------------- */
+
+@media (max-width: 1024px) {
+  .homepage {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .section-box {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .right-section {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .nav-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 0.8rem;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    width: 170px;
+    height: 210px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 0.75rem;
+  }
+}
