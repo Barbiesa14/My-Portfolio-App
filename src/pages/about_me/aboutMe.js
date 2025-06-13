@@ -12,12 +12,14 @@ function About() {
           <div className="about-left">
             <h1 className="about-title gradient-text">ABOUT ME</h1>
             <p className="about-text">
-              I’m a passionate software engineer currently working at Tech Mahindra. 
-               I hold a Master’s degree in Computer Applications (MCA) and specialize in application development and big data technologies. 
-               I thrive on building intuitive user experiences, 
-              architecting scalable systems, and turning complex data into meaningful insights. Blending creativity with engineering, 
-              I constantly push myself to learn, adapt, and build products that make a difference.
-
+              I’m a enthusiastic software engineer currently working at Tech
+              Mahindra. I hold a Master’s degree in Computer Applications (MCA)
+              and specialize in application development and big data
+              technologies. I thrive on building intuitive user experiences,
+              architecting scalable systems, and turning complex data into
+              meaningful insights. Blending creativity with engineering, I
+              constantly push myself to learn, adapt, and build products that
+              make a difference.
             </p>
           </div>
 
@@ -36,7 +38,11 @@ function About() {
           <h3 className="category-title">Area of Interest</h3>
           <div className="skills-bubbles">
             {["Big Data", "AI", "Application Development"].map((item, i) => (
-              <span className="bubble" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
+              <span
+                className="bubble"
+                key={i}
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
                 {item}
               </span>
             ))}
@@ -47,7 +53,11 @@ function About() {
           <h3 className="category-title">Languages Known</h3>
           <div className="skills-bubbles">
             {["English", "Tamil", "Hindi (Read & Write)"].map((lang, i) => (
-              <span className="bubble" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
+              <span
+                className="bubble"
+                key={i}
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
                 {lang}
               </span>
             ))}
